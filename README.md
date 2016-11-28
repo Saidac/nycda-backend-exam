@@ -12,7 +12,7 @@ It can alter a HTTP request response cycle with some logic. We can use it for ro
 
 ### 3 - Why do we use express.static() middleware?
 
-To serve static files in a public directory.
+To serve static files in a public directory, like css files for exmaple.
 
 ### 4 - What is favicon.ico ?
 
@@ -29,7 +29,7 @@ If we submit with POST we do so synchrousley via HTTP request to our db.
 
 ### 7 - Why do we use methodOverride middleware ?
 
-To hack the HTTP POST function in forms so we can delete and edit.
+To extend the HTTP POST in forms so we can delete and edit data.
 
 ### 8 - What are the differences between sessions and cookies ?
 
@@ -43,8 +43,8 @@ For authentication purposes. Out app may render different views for a user resou
 
 Because gulp is an awesome thing that lets you connect components by streams and build on the fly.
 
-We can use it to make our app load faster with concating our js and css files into one.
+We can use it to make our app load faster with bouncing our js or css files into one file for faster load time. We can also use it to create sprite version of a bunch of images?
 
 This writing feature can also be use to write a css file with only the classes from bootstrap which we are actually using to minimize load time. Also we can uglify code with it.  
 
-Dont really grap the power of streams yet, but I guess its a way of sending and retriving data at a lower level than for example a http request response cycle.
+Dont really grasp the power of streams yet, but I guess its a way of sending and retriving data at a lower level than for example a http request response cycle.
