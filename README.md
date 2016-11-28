@@ -11,29 +11,33 @@ Because otherwise it's going to be loaded before our content. For the user it ca
 It can alter a HTTP request response cycle with some logic. We can use it for routing or authentication for example.
 
 ### 3 - Why do we use express.static() middleware?
+Middleware deals with the response and request object, and can be used for routing but also exucuting code before the response is given to a request.
 
-To serve static files in a public directory, like css files for exmaple.
+We can use it to serve static files in a public directory, like css files for exmaple.
 
 ### 4 - What is favicon.ico ?
 
 Custom icon to be displayed in the adressbar of the browser.
 
 ### 5 - Why do we use a bodyParser middleware ?
+
 It parses the body part of the HTTP request in to something that is easier to deal with for node.
 
 ### 6 - What is the difference in terms of parsing a data received from a web form with POST or an AJAX POST request?
 
-An AJAX gets data asynchrously by parsing it as JSON.
+An AJAX gets data asynchrously as a string in JS and by parsing it as JSON can be stored in a json file.
 
-If we submit with POST we do so synchrousley via HTTP request to our db.
+If we submit with POST we do so synchrousley via HTTP request which body we can parse with middleware and map it after a model we create with an ORM so we can store it in our DB correctly.
 
 ### 7 - Why do we use methodOverride middleware ?
 
-To extend the HTTP POST in forms so we can delete and edit data.
+To extend the HTTP POST in forms so we can delete and edit data, where the client normally dont support it.
 
 ### 8 - What are the differences between sessions and cookies ?
 
 Session are stored server side. Cookies are stored client side. Sessions are used for caching.
+
+We use cookies to store data about the client's user on their machine. 
 
 ### 9 - Why do we use a session middleware ?
 
