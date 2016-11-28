@@ -13,7 +13,7 @@ It can alter a HTTP request response cycle with some logic. We can use it for ro
 ### 3 - Why do we use express.static() middleware?
 Middleware deals with the response and request object, and can be used for routing but also exucuting code before the response is given to a request.
 
-We can use it to serve static files in a public directory, like css files for exmaple.
+We can use it to serve static files, over http, from a public directory, like css files for exmaple.
 
 ### 4 - What is favicon.ico ?
 
@@ -37,7 +37,7 @@ To extend the HTTP POST in forms so we can delete and edit data, where the clien
 
 Session are stored server side. Cookies are stored client side. Sessions are used for caching.
 
-We use cookies to store data about the client's user on their machine. 
+We use cookies to store data about the client's user on their machine.
 
 ### 9 - Why do we use a session middleware ?
 
