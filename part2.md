@@ -3,27 +3,14 @@
 Given that we have a "customer" resource/model in our web server,
 
 1 - How would you design the routes of your server based on REST convention? List them with VERB and /route
-in bash
-mkdir routes
-cd routes
-touch admin.js
 
-in admin js file:
-
-router.get('/customers') => (req, res) {
-  res.render('customers/index')
-};
-
-answer in your requested format:
-
-GET admin/customers/index
-GET admin/customers/:id
-GET admin/customer/new
-POST admin/customer/:id/new
+GET admin/customers/
+GET admin/customers/new
+POST admin/customers/
+GET admin/customer/:id/
 GET admin/customer/:id/edit
-PUT admin/customer/:id/edit
-DELETE admin/customer/:id/delete
-GET admin/customer/:id/delete (for displaying alert warning)
+PUT admin/customer/:id
+DELETE admin/customer/:id/
 
 
 2 - Which pages would require templates, and how would you name them? List them with /route and templateName.extension
